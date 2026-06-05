@@ -113,6 +113,9 @@
     .contact .btn { margin-top: 28px; }
 
     footer { border-top: 1px solid var(--border); padding: 36px 0; color: var(--muted); font-size: 0.88rem; text-align: center; }
+    footer .social { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); font-weight: 600; transition: color .15s; }
+    footer .social:hover { color: var(--accent-lt); }
+    footer .copyright { margin-top: 14px; }
   </style>
 </head>
 <body>
@@ -232,7 +235,15 @@
   </section>
 
   <footer>
-    <div class="wrap">© 2026 Aeternum AI · Discord bots, AI chatbots & Python automation</div>
+    <div class="wrap">
+      <a class="social" href="https://x.com/AeternumAI" target="_blank" rel="noopener" aria-label="Aeternum AI on X">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/>
+        </svg>
+        <span>@AeternumAI</span>
+      </a>
+      <div class="copyright">© 2026 Aeternum AI · Discord bots, AI chatbots &amp; Python automation</div>
+    </div>
   </footer>
 
 </body>
